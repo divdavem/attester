@@ -15,11 +15,7 @@
 
 describe("a test that disconnects the browser", function () {
 	it("should log an error", function () {
-		// Try to get the socket to close from the top iframe
-		var sockets = window.parent.io.sockets;
-		for (var host in sockets) {
-			// There should be only one
-			sockets[host].disconnect();
-		}
+		// Disconnect attester:
+		window.top.attester.__disconnect();
 	});
 });

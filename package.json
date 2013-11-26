@@ -22,7 +22,8 @@
         "optimist": "0.6.0",
         "portfinder": "0.2.1",
         "send": "0.1.0",
-        "socket.io": "0.9.16",
+        "primus": "1.4.6",
+        "sockjs": "0.3.8",
         "ua-parser": "0.3.3",
         "exit": "0.1.2",
         "eventemitter2": "git+https://github.com/piuccio/EventEmitter2.git#wildcard_listeners"
