@@ -47,6 +47,6 @@
         "test": "grunt test"
     },
     "engines": {
-        "node": "~0.8.3"
+        "node": ">=0.8.3"
     }
 }
