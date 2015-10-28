@@ -3,24 +3,31 @@ launchers:
     SauceLabsConfig:
         $launcher: '$saucelabs'
         $connectionRetries: 1
+        robot: true
+        robotHost: '127.0.0.1'
+        robotPort: 7778
+        robotArgs: []
         capabilities:
             tunnelIdentifier: <%= env.TRAVIS_JOB_NUMBER %>
             recordVideo: false
-            recordScreenshots: false
+            #recordScreenshots: false
 browsers:
     Firefox:
         $launcher: 'SauceLabsConfig'
         capabilities:
             browserName: 'firefox'
+            platform: 'Windows 10'
     Firefox 11:
         $launcher: 'SauceLabsConfig'
         capabilities:
             browserName: 'firefox'
             version: '11.0'
+            platform: 'Windows 10'
     Chrome:
         $launcher: 'SauceLabsConfig'
         capabilities:
             browserName: 'chrome'
+            platform: 'Windows 10'
     Safari:
         $launcher: 'SauceLabsConfig'
         capabilities:
@@ -53,7 +60,7 @@ browsers:
         $launcher: 'SauceLabsConfig'
         capabilities:
             browserName: 'internet explorer'
-            platform: 'Windows 7'
+            platform: 'Windows 10'
             version: '11.0'
     Edge:
         $launcher: 'SauceLabsConfig'
