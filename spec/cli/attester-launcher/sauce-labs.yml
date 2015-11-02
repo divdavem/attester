@@ -8,7 +8,7 @@ launchers:
         robotPort: 7778
         robotArgs: []
         capabilities:
-            tunnelIdentifier: <%= env.TRAVIS_JOB_NUMBER %>
+            #tunnelIdentifier: <%= env.TRAVIS_JOB_NUMBER %>
             recordVideo: false
             #recordScreenshots: false
 browsers:

@@ -14,6 +14,6 @@ env:
   - SAUCE_USERNAME=ariatemplates
   - SAUCE_ACCESS_KEY=620e638e-90d2-48e1-b66c-f9505dcb888b
 addons:
- sauce_connect:
-  direct_domains: 127.0.0.1
+# sauce_connect:
+#  direct_domains: 127.0.0.1
  firefox: "36.0"
