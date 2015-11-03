@@ -7,7 +7,7 @@ launchers:
         robotHost: '127.0.0.1'
         robotPort: 80
         capabilities:
-            #tunnelIdentifier: <%= env.TRAVIS_JOB_NUMBER %>
+            tunnelIdentifier: <%= env.TRAVIS_JOB_NUMBER %>
             recordVideo: false
             #recordScreenshots: false
 browsers:
