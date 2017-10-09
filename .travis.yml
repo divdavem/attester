@@ -8,6 +8,7 @@ cache:
   - node_modules
 before_install:
  - npm --version
+ - npm install -g phantomjs@1.9.20
  - phantomjs --version
  - npm install -g geckodriver@1.8
 before_script:
